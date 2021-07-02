@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- calendar -->
+    <link rel="stylesheet" href="calendar/style.css">
+    <link rel="stylesheet" href="calendar/theme.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="style/style.css">
+    <title>DT-V1</title>
+  </head>
+  <body>
+    
+
+    <div class="container">
+        <ul class="mx-auto">
+            <li class="choose active linkable">
+              <a class="text-dark" href="#">CHOOSE <span class="fa fa-angle-right"></span></a>
+            </li>
+            <li class="details">
+                <a class="text-dark" href="#">DETAILS <span class="fa fa-angle-right"></span></a>
+              </li>
+              <li class="payment">
+                <a class="text-dark" href="#">PAYMENT <span class="fa fa-angle-right"></span></a>
+              </li>
+              <li class="finish">
+                <a class="text-dark" href="#">FINISH</a>
+              </li>
+            
+          </ul>
+    </div>
+
+
+    <!-- main field -->
+    <section class="mainField py-5">
+        <div class="field1 field">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="text-primary">Hi, How many are you?</h1>
+                </div>
+                <table class="table mt-5">
+                    <tr>
+                        <td class="w-15">
+                            <div class="bestDeal bg-violet text-center font-weight-bold">BEST <br>
+                                DEAL</div>
+                        </td>
+                        <td class="w-40">
+                            <p class="fs-18 mb-0 hh">
+                                Family Ticket
+                            </p>
+                            <p class="fs-14 mb-0">
+                                up to 2 adults 
+                            </p>
+                            <p class="fs-14 mb-0">
+                                and 3 children age 3-18
+                            </p>
+                        </td>
+                        <td class="va-middle w-30 text-right">
+                            <span class="text-primary fs-22 font-weight-bold">100 NIS</span>
+                        </td>
+                        <td class="va-middle w-15">
+                            <button class="btn" onclick="decr1()">
+                                <img src="img/minus.png" class="img-fluid" alt="">
+                            </button>
+                            <input type="number" class="incr fs-22 text-center" name="" value="0" id="numField1">
+                            <button class="btn" onclick="incr1()">
+                                <img src="img/plus.png" class="img-fluid" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p class="fs-18 mb-0">
+                                Adult
+                            </p>
+                            <p class="fs-14 mb-0">
+                                18+
+                            </p>
+                        </td>
+                        <td class="va-middle w-30 text-right">
+                            <span class="text-primary fs-22 font-weight-bold">44 NIS</span>
+                        </td>
+                        <td class="va-middle w-15">
+                            <button class="btn" onclick="decr2()">
+                                <img src="img/minus.png" class="img-fluid" alt="">
+                            </button>
+                            <input type="number" class="incr fs-22 text-center" name="" value="0" id="numField2">
+                            <button class="btn" onclick="incr2()">
+                                <img src="img/plus.png" class="img-fluid" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p class="fs-18 mb-0">
+                                Child
+                            </p>
+                            <p class="fs-18 mb-0">
+                                Student
+                            </p>
+                            <p class="fs-18 mb-0">
+                                Local Resident
+                            </p>
+                        </td>
+                        <td class="va-middle w-30 text-right">
+                            <span class="text-primary fs-22 font-weight-bold">33 NIS</span>
+                        </td>
+                        <td class="va-middle w-15">
+                            <button class="btn" onclick="decr3()">
+                                <img src="img/minus.png" class="img-fluid" alt="">
+                            </button>
+                            <input type="number" class="incr fs-22 text-center" name="" value="0" id="numField3">
+                            <button class="btn" onclick="incr3()">
+                                <img src="img/plus.png" class="img-fluid" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p class="fs-18 mb-0">
+                                Veteran
+                            </p>
+                            <p class="fs-18 mb-0">
+                                Disabled
+                            </p>
+                            <p class="fs-18 mb-0">
+                                Soldier
+                            </p>
+                        </td>
+                        <td class="va-middle w-30 text-right">
+                            <span class="text-primary fs-22 font-weight-bold">22 NIS</span>
+                        </td>
+                        <td class="va-middle w-15">
+                            <button class="btn" onclick="decr4()">
+                                <img src="img/minus.png" class="img-fluid" alt="">
+                            </button>
+                            <input type="number" class="incr fs-22 text-center" name="" value="0" id="numField4">
+                            <button class="btn" onclick="incr4()">
+                                <img src="img/plus.png" class="img-fluid" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="text-right mt-4">
+                    <button class="btn text-violet font-weight-bold gotoStep2">
+                        NEXT <span class="fa fa-angle-right"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="field2 field">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="text-primary">When can we expect you?</h1>
+                    <main>
+                        <div class="calendar-wrapper"></div>
+                      </main>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <button class="btn text-violet font-weight-bold gotoStep1">
+                            <span class="fa fa-angle-left"></span> PREVIOUS
+                        </button>
+                    </div>
+                    <div class="col-6 text-right">
+                        <button class="btn text-violet font-weight-bold gotoStep7">
+                            NEXT <span class="fa fa-angle-right"></span>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="field3 field">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="text-primary mb-5">Please choose your tours’ Language</h1>
+                    <button class="btn btn-outline-primary font-weight-bold text-dark">עברית</button>
+                    <button class="btn btn-outline-primary font-weight-bold text-dark">ENGLISH</button>
+                    <select name="" class="form-control" id="">
+                        <option value="" selected disabled>OTHER LANGUAGES</option>
+                        <option value="lanuage 1">LANGUAGE 1</option>
+                        <option value="lanuage 2">LANGUAGE 2</option>
+                        <option value="lanuage 3">LANGUAGE 3</option>
+                        <option value="lanuage 4">LANGUAGE 4</option>
+                        <option value="lanuage 5">LANGUAGE 5</option>
+                    </select>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <button class="btn text-violet font-weight-bold gotoStep2">
+                            <span class="fa fa-angle-left"></span> PREVIOUS
+                        </button>
+                    </div>
+                    <div class="col-6 text-right">
+                        <button class="btn text-violet font-weight-bold gotoStep4">
+                            NEXT <span class="fa fa-angle-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="field4 field">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="text-primary mb-5">Please choose the tours’ Hour</h1>
+                    <select name="" class="form-control" id="">
+                        <option value="" selected disabled>Choose Hour</option>
+                        <option value="lanuage 1">09:00</option>
+                        <option value="lanuage 1">10:00</option>
+                        <option value="lanuage 1">11:00</option>
+                        <option value="lanuage 1">12:00</option>
+                        <option value="lanuage 1">13:00</option>
+                        <option value="lanuage 1">14:00</option>
+                        <option value="lanuage 1">15:00</option>
+                        <option value="lanuage 1">16:00</option>
+                        <option value="lanuage 1">17:00</option>
+                        <option value="lanuage 1">18:00</option>
+                    </select>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <button class="btn text-violet font-weight-bold gotoStep3">
+                            <span class="fa fa-angle-left"></span> PREVIOUS
+                        </button>
+                    </div>
+                    <div class="col-6 text-right">
+                        <button class="btn text-violet font-weight-bold gotoStep5">
+                            NEXT <span class="fa fa-angle-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="field5 field">
+            <div class="container">
+               <table class="table bg-secondary">
+                  <tr>
+                      <td colspan="3" class="text-center text-primary border-0">
+                        Order Summery
+                      </td>
+                  </tr>
+                   <tr>
+                       <td class="border-0 w-33 py-2">
+                            Date: 18.6.2021
+                       </td>
+                       <td class="border-0 w-33 py-2 text-center">
+                            Adult
+                       </td>
+                        <td class="border-0 w-33 py-2 text-center">
+                            88
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="border-0 w-33 py-2">
+                            Hour: 13:00
+                       </td>
+                       <td class="border-0 w-33 py-2 text-center">
+                            Child / Student / Local Resident
+                       </td>
+                        <td class="border-0 w-33 py-2 text-center">
+                            66
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="border-0 w-33 py-2 pb-4">
+                            <input type="text" class="form-control" placeholder="enter coupon" name="" id="">
+                       </td>
+                       <td class="border-0 w-33 py-2 pb-4 text-center">
+                            <button class="btn btn-primary faded">Activate Cupon</button>
+                       </td>
+                        <td class="border-0 w-33 py-2 pb-4 text-center">
+                            Total: 176 NIS
+                       </td>
+                   </tr>
+               </table>
+
+               <div class="text-center mt-5">
+                   <p class="text-primary">Fill up your details</p>
+               </div>
+              <form action="">
+                <div class="row mt-2">
+                    <div class="col-md-6 p-2">
+                        <input type="text" class="form-control" placeholder="Name:" name="" id="">
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <input type="text" class="form-control" placeholder="Phone:" name="" id="">
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <input type="text" class="form-control" placeholder="Familly Name:" name="" id="">
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <input type="email" class="form-control" placeholder="Email" name="" id="">
+                    </div>
+                    <div class="col-md-6 p-2 m-auto">
+                        <input type="checkbox" name="" id="first"> <label for="first">Something</label> <br>
+                        <input type="checkbox" name="" id="last"> <label for="last">Something</label>
+                    </div>
+                    <div class="col-md-6 p-2 m-auto">
+                        <input type="submit" class="btn btn-primary btn-block text-center" value="PAY NOW" name="" id="">
+                    </div>
+                </div>
+              </form>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <button class="btn text-violet font-weight-bold gotoStep4">
+                            <span class="fa fa-angle-left"></span> PREVIOUS
+                        </button>
+                    </div>
+                    <div class="col-6 text-right">
+                        <button class="btn text-violet font-weight-bold gotoStep6">
+                            NEXT <span class="fa fa-angle-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="field6 field">
+            <div class="container">
+              <h1 class="text-primary fs-60 font-weight-bold text-center">Thank You,</h1>
+              <p class="text-center">
+                a confirmation message was sent to your inbox
+              </p>
+              <h3 class="fs-24 text-primary text-center">
+                Looking forward to meet you!
+              </h3>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <button class="btn text-violet font-weight-bold gotoStep5">
+                            <span class="fa fa-angle-left"></span> PREVIOUS
+                        </button>
+                    </div>
+                    <div class="col-6 text-right">
+                        <button class="btn text-violet font-weight-bold">
+                            NEXT <span class="fa fa-angle-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="field7 field">
+            <div class="container">
+              <h1 class="text-primary fs-60 font-weight-bold text-center">Ooopsss...</h1>
+              <p class="text-center">
+                The chosen dates are no longer available.
+              </p>
+              <p class="text-center">
+                How would you like to continue?
+              </p>
+              <h3 class="fs-24 text-primary text-center">
+                Looking forward to meet you!
+              </h3>
+              <div class="text-center mt-4">
+                <button class="btn px-5 btn-primary mr-2 gotoStep3">
+                    Change my order
+                </button>
+                <button class="btn px-5 btn-primary btn-violet ml-2">
+                    Talk to someone
+                </button>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- main field -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+
+    <!-- popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- calendar -->
+    <script src="calendar/calendar.min.js"></script>
+
+    <script
+      src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>

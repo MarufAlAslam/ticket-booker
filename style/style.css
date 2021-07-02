@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'barlow-light';
+    src: url(../fonts/barlow/Barlow-Light.ttf);
+}
+@font-face {
+    font-family: 'barlow-regular';
+    src: url(../fonts/barlow/Barlow-Regular.ttf);
+}
+@font-face {
+    font-family: 'barlow-semibold';
+    src: url(../fonts/barlow/Barlow-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'barlow-bold';
+    src: url(../fonts/barlow/Barlow-Bold.ttf);
+}
+@font-face {
+    font-family: 'barlow-black';
+    src: url(../fonts/barlow/Barlow-Black.ttf);
+}
+
+*{
+    font-family: 'barlow-regular';
+}
+.nav-link.text-dark span {
+	margin-left: 5px !important;
+	display: inline-block;
+	vertical-align: middle !important;
+}
+.text-primary{
+    color: #00A9E7 !important;
+}
+h1.text-primary{
+    font-family: 'barlow-bold';
+}
+.bestDeal.bg-violet {
+	background: #2A206E;
+	color: white;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-14{
+    font-size: 14px;
+}
+td .fs-18.mb-0.hh {
+	line-height: 10px;
+	color: #2A206E;
+	margin-bottom: 5px !important;
+}
+td .fs-18.mb-0 {
+	color: #2A206E;
+}
+.va-middle{
+    vertical-align: middle !important;
+}
+.fs-22{
+    font-size: 22px;
+}
+.incr {
+	width: 50px;
+	height: 50px;
+}
+.w-15 {
+	width: 15%;
+}
+.w-30 {
+	width: 20%;
+}
+.w-40 {
+	width: 25%;
+}
+td {
+	border-top: 1px solid #00A9E7 !important;
+	padding: 20;
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+}
+.text-violet{
+    color: #2A206E !important;
+}
+body {
+	background: #F2F2F2;
+}
+.calendar-wrapper {
+	background: white;
+	/* max-width: 75%; */
+	margin: auto;
+	margin-top: 50px;
+	padding-bottom: 20px;
+}
+.special-buttons {
+	display: none;
+}
+.week.start-on-monday.highlight {
+	background: white;
+}
+.day span {
+	border-radius: 0;
+}
+.week .day.selected span {
+	background: #00A9E7;
+	color: white;
+}
+.day.today span::after {
+	border-bottom: unset;
+}
+.btn.btn-outline-primary.font-weight-bold.text-dark {
+	display: block;
+	margin: auto;
+	width: 200px;
+	margin-top: 10px;
+	background: white;
+	color: black !important;
+	border: unset;
+}
+.btn.btn-outline-primary.font-weight-bold.active{
+    color: white !important;
+    background-color: #00A9E7 !important;
+}
+button:focus{
+    box-shadow: unset !important;
+}
+select.form-control {
+	width: 200px;
+	margin: auto;
+	margin-top: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	border: unset;
+}
+.form-control:focus{
+	outline: unset !important;
+	box-shadow: unset !important;
+}
+.w-33{
+	width: 33.33%;
+}
+.btn.btn-primary.faded {
+	background: #99DDF5 !important;
+	border-color: #99DDF5;
+}
+/* .table.bg-secondary {
+	background: #E6E6E6 !important;
+	max-width: 80%;
+	margin: auto;
+} */
+.table.bg-secondary td {
+	padding-left: 35px;
+}
+.mainField.py-5 {
+	max-width: 70%;
+	margin: auto;
+}
+td.va-middle.w-15 {
+	text-align: center;
+	vertical-align: middle !important;
+}
+td .btn {
+	vertical-align: middle !important;
+	position: relative;
+	top: -5px;
+}
+.table.bg-secondary {
+	background-color: #E6E6E6 !important;
+	border-radius: 10px;
+	padding-bottom: 10px !important;
+}
+.field4 input {
+	border-radius: 10px;
+	border: unset;
+}
+.fs-60{
+	font-size: 60px;
+}
+.btn.px-5.btn-primary.btn-violet.ml-2 {
+	background-color: #2A206E !important;
+	border-color: #2A206E !important;
+}
+
+.field2, .field3, .field4, .field5, .field6, .field7{
+	display: none;
+}
+ul li.active a {
+	color: #2A206E !important;
+	font-weight: bold;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+ul.mx-auto {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-top: 30px;
+}
+ul.mx-auto li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+@media screen and (max-width:992px){
+	.mainField.py-5 {
+		max-width: 100%;
+		margin: auto;
+	}
+	.w-15 {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width:767px){
+	.w-15:first-child {
+		width: 10%;
+		font-size: 14px;
+		font-size: 14px;
+	}
+	.w-40 {
+		width: 40% !important;
+	}
+	td .fs-18.mb-0.hh {
+		line-height: 1;
+		color: #2A206E;
+		margin-bottom: 5px !important;
+	}
+	.table.mt-5 td {
+		vertical-align: middle;
+	}
+	ul.mx-auto li a {
+		font-size: 13px;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	.text-center.mt-4 button {
+		margin: 0 !important;
+		margin-top: 10px !important;
+	}
+	.table.bg-secondary td {
+		padding-left: 15px;
+	}
+}
