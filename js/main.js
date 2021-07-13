@@ -10,7 +10,7 @@ var defaultConfig = {
   date: new Date(),
   onClickDate: selectDate,
   showYearDropdown: true,
-  startOnMonday: true,
+  startOnSunday: true,
 };
 
 $('.calendar-wrapper').calendar(defaultConfig);`;
@@ -134,3 +134,5 @@ $('.finish.linkable a').click(function(event){
   $('.field').hide(100)
   $('.field6').show(100)
 })
+$('.prev-button img').attr("src","img/arrow-left.png")
+$('.next-button img').attr("src","img/arrow-right.png")
